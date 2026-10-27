@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kenzo | Personal Website</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #050b18;
+  color: #eaf4ff;
+  line-height: 1.7;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #173454;
+  background: #071225;
+}
+
+.logo {
+  color: #38bdf8;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  color: #d5e9ff;
+  text-decoration: none;
+  margin-left: 12px;
+  font-size: 13px;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 22px;
+  background:
+    radial-gradient(circle at 80% 20%,
+    #103b68 0%, transparent 40%),
+    #050b18;
+}
+
+.tag {
+  color: #38bdf8;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: clamp(35px, 9vw, 65px);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  color: #38bdf8;
+}
+
+.hero p {
+  color: #a8bed8;
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #0284c7;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  width: fit-content;
+}
+
+section {
+  padding: 65px 22px;
+}
+
+.section-title {
+  color: #38bdf8;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #0b1930;
+  border: 1px solid #193958;
+  padding: 22px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  color: #7dd3fc;
+  margin-bottom: 10px;
+}
+
+.card p, .about p {
+  color: #a8bed8;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.skills span {
+  border: 1px solid #1479ac;
+  color: #7dd3fc;
+  background: #0b1c32;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.contact {
+  text-align: center;
+  background: #071225;
+}
+
+.contact p {
+  color: #a8bed8;
+  margin-bottom: 22px;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  color: #7088a5;
+  font-size: 12px;
+  border-top: 1px solid #173454;
+}
+
+@media (min-width: 700px) {
+  header {
+    padding: 22px 8%;
+  }
+
+  .hero {
+    padding: 70px 10%;
+    min-height: 80vh;
+  }
+
+  section {
+    padding: 80px 10%;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .card {
+    margin-bottom: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">KENZO.DEV</div>
+  <nav>
+    <a href="#about">Profil</a>
+    <a href="#projects">Karya</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="tag">WELCOME TO MY DIGITAL WORLD</div>
+
+    <h1>Halo, Saya<br>
+      <span>Kenzo Chandra Nugraha</span>
+    </h1>
+
+    <p>
+      Pelajar kreatif yang tertarik pada desain,
+      teknologi, perangkat elektronik, dan dunia digital.
+      Ini adalah ruang pribadi untuk memperkenalkan
+      diri dan menampilkan karya saya.
+    </p>
+
+    <a href="#projects" class="btn">Jelajahi Karya →</a>
+  </div>
+
+  <section id="about" class="about">
+    <h2 class="section-title">Tentang Saya</h2>
+
+    <p>
+      Saya memiliki ketertarikan pada desain komunikasi
+      visual, teknologi gadget, perbaikan perangkat
+      elektronik, serta pengembangan ide kreatif.
+      Saya terus belajar dan mencoba hal-hal baru
+      untuk mengembangkan kemampuan saya.
+    </p>
+
+    <div class="skills">
+      <span>Desain Grafis</span>
+      <span>Teknologi Gadget</span>
+      <span>Elektronik</span>
+      <span>Kreativitas</span>
+      <span>Web Design</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Karya & Minat</h2>
+
+    <div class="projects">
+      <div class="card">
+        <h3>01 / Desain Visual</h3>
+        <p>
+          Eksplorasi desain grafis, konsep visual,
+          ilustrasi, dan identitas digital.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>02 / Teknologi</h3>
+        <p>
+          Mempelajari perangkat smartphone,
+          komponen elektronik, dan perangkat keras.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>03 / Proyek Digital</h3>
+        <p>
+          Membangun ide kreatif menjadi proyek
+          digital dan website pribadi.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Hubungi Saya</h2>
+    <p>
+      Ingin melihat perkembangan karya saya
+      atau berdiskusi tentang teknologi?
+    </p>
+
+    <a href="mailto:emailkamu@example.com"
+       class="btn">
+       Kirim Email
+    </a>
+  </section>
+</main>
+
+<footer>
+  © 2026 Kenzo Chandra Nugraha.
+  Dibuat dengan kreativitas.
+</footer>
+
+</body>
+</html>
